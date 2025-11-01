@@ -28,7 +28,7 @@ You can add, edit, mark as completed, and delete tasks — all saved in your bro
 
 1. Download or clone this repository  
    ```bash
-   git clone https://github.com/your-username/todo-list.git
+   git clone https://github.com/krutzia/todo-list.git
    ```
 2. Open the folder and double-click index.html
 3. Enjoy managing your tasks! 🎯
