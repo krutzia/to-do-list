@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div>
+        <h1>Todo List</h1>
+        <p>Small, fast, and saves to your browser.</p>
+      </div>
+      <div>🗒️</div>
+    </header>
+
+    <section class="add">
+      <div class="input-row">
+        <input id="newInput" type="text" placeholder="Add a new task and press Add or Enter">
+        <button id="addBtn">Add</button>
+      </div>
+    </section>
+
+    <section class="controls">
+      <div class="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="active">Active</button>
+        <button class="filter" data-filter="completed">Completed</button>
+      </div>
+      <button class="clear-btn" id="clearCompleted">Clear completed</button>
+    </section>
+
+    <ul class="todo-list" id="todoList"></ul>
+    <div class="empty" id="emptyState" hidden>No tasks yet — add one above ✨</div>
+
+    <footer>
+      <div><span id="count">0</span> items</div>
+      <div class="meta">
+        <button id="exportBtn" title="Export JSON">Export</button>
+        <button id="importBtn" title="Import JSON">Import</button>
+        <input id="fileInput" type="file" accept="application/json" style="display:none">
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
